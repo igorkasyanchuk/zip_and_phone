@@ -1,0 +1,106 @@
+!!!
+%html
+  %head
+    == <title>#{(yield :title) || SEO[:title]}</title>
+    == <meta content="#{(yield :seo_description) || SEO[:description]}" name="description" />
+    == <meta content="#{(yield :seo_keywords) || SEO[:keywords]}" name="keywords" />
+    %meta{ 'http-equiv' => 'imagetoolbar', :content => 'no' }
+    %meta{ :name => 'distribution', :content => 'global' }
+    %meta{ :name => 'robots', :content => 'all' }
+    %meta{ :name => 'resource-type', :content => 'document' }
+    %meta{ :name => 'MSSmartTagsPreventParsing', :content => 'true' }
+    <meta content="en-US" http-equiv="Content-Language" />
+    <meta name="google-site-verification" content="DTHZRQUwR3aYilJ-B7vSSpeikIJQW84qlaMZCmNRlF0" />
+    <meta name='yandex-verification' content='6a6f54eac425e6a6' />
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="audience" content="all" />
+    <meta name="revisit-after" content="7 days" />
+    <meta content="Igor Kasyanchuk" name="author" />
+    <meta content="Group" name="classification"/>
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
+    %link{ :href => "/stylesheets/style.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+    = yield :css
+    %style{:type => 'text/css'}
+      /* inline styles */
+      = yield :inline_css
+    = yield :map
+    = yield :js
+    = render :partial => '/shared/js'
+    <link type="image/x-icon" rel="shortcut icon" href="http://cityzip.org.ua/favicon.ico" />
+    <link type="image/x-icon" rel="icon" href="http://cityzip.org.ua/favicon.ico" />
+  %body#pagetop
+    .pagewrap
+      .wrap
+        .content
+          .topwrap
+            #search
+              %form{ :name => "gs", :method => "get", :action => "/#{I18n.locale}/home/search" }
+                %input.ip{ :name => "q", :size => "25", :maxlength => "2048", :type => "text", :value => "#{params['q']}" }
+                %button
+                  = t('search_button')
+              .clearpara
+            #menu
+              %ul
+                %li{:class => "#{'on' if action_name != 'new'}"}
+                  = link_to t('home_link'), root_path, :title => "The Home Page", :accesskey => "h", :id => 'home'
+                %li{:class => "#{'on' if action_name == 'new'}"}
+                  = link_to t('contact_link'), new_contact_path, :title => "The Contact Page", :accesskey => "c", :id => 'contact'
+                %li
+                  = link_to t('city_maps'), 'http://kartaonline.com/', :title => t('city_maps')
+                %li
+                  = link_to t('citycode_link'), 'http://citycode.org.ua/', :title => t('citycode_link')
+                %li
+                  %a{:href => 'javascript: add_to_favorites();'}= t('add_to_favorites')
+              %p.clearpara
+              /
+                \/menu
+            %p.clearpara
+            /
+              \/topwrap
+            %p.clearpara
+          .maincontent
+            %div.top_ad
+              = render :partial => '/shared/top_ad'
+            .section_header
+              %ul.breadcrumbs
+                = yield :breadcrumbs
+              %div.clear
+              %h1
+                = yield :object_title
+                %span= (yield :post_code) || t('post_codes')
+              %p.clearpara
+            %div#flags_container
+              #flags_box
+                = flag_link('ua', 'uk')
+                = flag_link('ru', 'ru')
+                = flag_link('gb', 'en')
+            = flash_messages
+            %div
+              = render :partial => '/shared/add_this'
+              = yield
+            %div.bottom_ad
+              = render :partial => '/shared/bottom_ad'
+            %div.clear
+          .aboutsite
+            %p
+              = t('about_site')
+              %em
+                = t('about_site_zip_codes')
+          %p.clearpara
+          .categories
+            %ul
+              - O.all.each do |o|
+                %li= link_to o.name, o
+          .footer.lhs
+            %a{ :href => "#" }
+              \&copy; copyright.
+            %span.sitecredits
+              by Igor Kasyanchuk
+            %span.sitecredits
+              = (yield :seo_footer) || SEO[:footer]
+            %p.clearpara
+          %p.clearpara
+          %p.clearpara
+        %p.clearpara
+      %p.clearpara
+      = render :partial => '/shared/ga' if RAILS_ENV == 'production'

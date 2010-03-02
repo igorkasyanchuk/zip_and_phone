@@ -1,0 +1,9 @@
+inherited_resources --source 'http://gemcutter.org'
+has_scope --source 'http://gemcutter.org'
+responders --source 'http://gemcutter.org'
+pacecar --source 'http://gemcutter.org'
+unicode
+i18n --source 'http://gemcutter.org'
+romanvbabenko-ukrainian --source 'http://gems.github.com'
+formtastic --source 'http://gemcutter.org'
+

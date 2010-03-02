@@ -1,0 +1,6 @@
+- page_title(t('home_title'))
+
+%ul.list
+  - O.all.each do |o|
+    %li= link_to o.name, o
+%div.clear

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_uk: MyString
+  name_ru: MyString
+  name_en: MyString
+  code: MyString
+  information: MyString
+  help: MyString
+
+two:
+  name_uk: MyString
+  name_ru: MyString
+  name_en: MyString
+  code: MyString
+  information: MyString
+  help: MyString

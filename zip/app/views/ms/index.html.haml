@@ -1,0 +1,9 @@
+%h1 Listing ms
+%table
+  %tr
+  - @ms.each do |m|
+  %tr
+    %td
+      = link_to 'Show', m
+%br
+= link_to 'New m', new_m_path

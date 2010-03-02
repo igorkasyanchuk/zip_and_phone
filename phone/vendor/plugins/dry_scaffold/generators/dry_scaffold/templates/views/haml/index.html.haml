@@ -1,0 +1,38 @@
+%h1.heading
+  = "<%= plural_name.humanize %>"
+
+<% if options[:search] -%>
+.actions-bar
+  %div{:class => "left search"}
+    - form_for @search do |f|
+      = f.label "Find:"
+      = f.text_field :<%= attributes.first.name %>
+      = f.submit("Search")
+<% if options[:pagination] -%>
+  .right
+    = will_paginate @collection, :prev_label => "&laquo; Back", :next_label => "Next &raquo;"
+  .clear                                                                                     
+<% end %>  
+<% end %> 
+  
+%p.actions
+  = link_to 'New <%= singular_name.humanize %>', <%= new_path %>
+  
+%table
+  %thead.header
+    %tr
+<% attributes.each do |attribute| -%>
+      %th.<%= attribute.name %>= '<%= attribute.name.humanize %>'
+<% end -%>
+      %th.actions= 'Actions'
+  %tbody.items.<%= plural_name %>
+    - <%= collection_instance %>.each do |<%= singular_name %>|
+      = render 'item', :<%= singular_name %> => <%= singular_name %>
+
+<% if options[:pagination] &&  !options[:search] -%>
+= will_paginate(<%= collection_instance %>)
+<% end -%>
+<% if options[:pagination] &&  options[:search] -%>
+= will_paginate @collection, :prev_label => "&laquo; Back", :next_label => "Next &raquo;"
+<% end -%>
+ 

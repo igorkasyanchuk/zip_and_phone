@@ -1,0 +1,6 @@
+%h2= t('contact_us')
+
+= render :partial => 'form', :locals => {:path => contacts_path, :button => t('post_message')}
+
+- content_for :on_ready do
+  $('#myslidemenu .contact-us').addClass('selected');

@@ -1,0 +1,12 @@
+- page_title(t('home_title'))
+
+%h3= t('random_list')
+
+%ul.list
+  - Phone.random.limit(20).all.each do |o|
+    %li
+      = link_to o.name, o
+      .info_search
+        .grey_text= o.code
+      
+%div.clear

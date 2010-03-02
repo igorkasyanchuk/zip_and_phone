@@ -1,0 +1,123 @@
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset ol li p.inline-hints { color:#333; }
+
+--------------------------------------------------------------------------------------------------*/
+form.formtastic fieldset ol li label { width: 15em;  text-align: right; }
+form.formtastic fieldset ol li.string input { width: 30em; }
+form.formtastic fieldset ol li.numeric input { width: 30em; }
+form.formtastic fieldset ol li.text textarea { width: 30em; }
+
+form.formtastic fieldset.buttons { padding-left:15.0em; }
+
+/* NEW */
+form.formtastic fieldset ol li.string input { width: auto; }
+form.formtastic fieldset ol li.numeric input { width: auto; }
+form.formtastic fieldset ol li.text textarea { width: auto; }
+
+form.formtastic fieldset ol li ul.errors { margin-left: 25%;  list-style-type: disc; }
+form.formtastic fieldset ol li ul.errors li { margin-bottom: 0.5em; }
+
+form.formtastic abbr { color: red; font-weight: bold; width: 0.1em; display: inline-block; vertical-align: top; }
+
+form.formtastic input, form.formtastic textarea, form.formtastic select { margin-left: 0.5em; vertical-align: middle; }
+
+form.formtastic { width: 50em; }
+
+form.formtastic legend { margin: 0.5em 0; }
+
+form.formtastic fieldset ul { margin-bottom: 1em; }
+
+
+form#contact_form.formtastic fieldset ol li label {
+  width: 80%;
+}
+
+form.formtastic fieldset ol li label {
+  width: 80% !important;
+}
+
+form#contact_form.formtastic fieldset.buttons {
+  padding-left: 5.2em;
+}
+
+form.formtastic li {
+  list-style: none;
+  padding: 0.2em 0;
+}
+
+form.formtastic li ol li {
+  padding: 0;
+}
+
+form.formtastic label, form.formtastic input, form.formtastic input, form.formtastic textarea, form.formtastic select {
+  display: block;
+  margin-left: 0;
+  min-width: 350px;
+}
+
+form.formtastic input[type='checkbox'], form.formtastic input[type='submit'] {
+  min-width: 16px;
+}
+
+
+form.formtastic li.check_boxes input, form.formtastic input[type='submit'] {
+  display: inline;
+}
+
+form.formtastic legend {
+  margin: 0;
+}
+
+form.formtastic p {
+  margin: 0.3em 0;
+}
+
+form.formtastic input[type='submit'] {
+  padding: 2px 3px;
+}
+
+form.formtastic fieldset ol li label {
+  width: auto;
+  text-align: left;
+}
+
+form.formtastic fieldset ol li {
+  margin-bottom: 0.3em;
+}
+
+form.formtastic label, form.formtastic span.label {
+  font-weight: bold;
+}
+
+form.formtastic li ol li label {
+  font-weight: normal;
+}
+
+form.formtastic fieldset ol li {
+  display: block;
+}
+
+form.formtastic #simple_captcha #captcha {
+  width: 7em !important;
+  min-width: 7em !important;
+}
+
+form.formtastic fieldset.buttons {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.errorExplanation h2 {
+  display: none;
+}
+
+form.formtastic fieldset ol li p.inline-errors {
+  margin-left: 0;
+}

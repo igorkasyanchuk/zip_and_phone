@@ -1,0 +1,7 @@
+%h1 Listing rs
+%table
+  %tr
+  - @rs.each do |r|
+  %tr
+    %td
+      = link_to 'Show', r

@@ -1,0 +1,2 @@
+module MsHelper
+end

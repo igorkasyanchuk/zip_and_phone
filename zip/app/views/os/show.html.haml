@@ -1,0 +1,16 @@
+- page_title(@o.name)
+- title(@o.name)
+- description(@o.name)
+- keywords(@o.name)
+- footers(@o.name)
+
+- content_for :breadcrumbs do
+  %ul
+    %li= link_to t('all_o'), root_path
+    %li &raquo;
+    %li= @o.name
+
+%ul.list
+  - @o.rs.each do |o|
+    %li= link_to o.name, [@o, o]
+%div.clear

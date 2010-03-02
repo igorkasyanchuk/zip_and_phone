@@ -1,0 +1,52 @@
+ru:
+  activerecord:
+    models:
+      user: Пользователь
+    attributes:
+      user:
+        login: 'Логин'
+        email: 'Емейл'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        first_name: "Імя"
+        last_name: Фамилия
+        age: Возраст
+        gender: Пол
+        avatar: Фото
+  layouts:
+    application:
+  dashboard_nav_link: Мой Кабинет
+  logout_nav_link: Выход
+  signup_nav_link: Регистрация
+  login_nav_link: Вход
+  main_logo_link: Главная
+  register_button: Регистрация
+  all_o: Все Области
+  post_codes: Почтовые индексы
+  post_code: Почтовый индекс
+  city_post_index_seo: "{{code}} индекс, почтовый индекс {{code}} Украина, индекс {{index}}"
+  city_post_index: "Почтовый индекс: {{code}}"
+  city_old_post_index: "Старый почтовый индекс: {{code}}"
+  home_link: Главная
+  contact_link: "Контакты"
+  home_title: Почтовые индексы Украины
+  about_site_zip_codes: Почтовых индексов Украины.
+  about_site: Самая полная база
+  search_button: Поиск
+  seo_title: Почтовые индексы Украины, почтовые коды городов Украины, почтовый код
+  seo_description: Почтовые индексы Украины, почтовые городов коды Украины, почтовый код
+  seo_keywords: Почтовые индексы Украины, почтовые коды городов Украины, почтовый код
+  seo_footer: почтовий индекс
+  search_results: 'Результаты поиска:'
+  search_results_nr: Поиск ничего не вернул.
+  post_contact_message: Написать нам
+  code_from_image_not_valid: Введенный код не совпадает.
+  contact_us: Написать нам  
+  add_to_favorites: Добавить в Закладки  
+  
+  citycode_link: Телефонные коды
+  
+  are_you_intereseted_in: "Возможно вас еще заинтересует:"
+  city_phone_code_link: "Телефонный код: {{city}}"
+  
+  city_maps: Карта городов

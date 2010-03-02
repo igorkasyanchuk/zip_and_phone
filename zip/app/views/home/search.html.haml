@@ -1,0 +1,20 @@
+- page_title(params['q'])
+%h2= t('search_results')
+
+- unless @results.empty?
+  %ul.list.search_results
+    - @results.each do |o|
+      %li
+        = link_to o.name, [o.o, o.r, o]
+        .info_search
+          .grey_text
+            = link_to (o.o.name, o.o)
+            &raquo;
+            = link_to o.r.name, [o.o, o.r]
+          .normal_text= t('city_post_index', :code => o.post_index)
+          .grey_text= t('city_old_post_index', :code => o.post_index)
+  %div.clear
+  = will_paginate @results
+
+- else  
+  %h3= t('search_results_nr')

@@ -1,0 +1,631 @@
+/********
+ Theme Name: Eastern Tale
+ Theme URI: http://Chilligavva.com
+ Details: This is a type based theme designed for Smashingmagazine.com contest
+ Version: 1.0
+ Author: Lakshmi Mareddy
+ Author URI: http://Chilligavva.com
+ Author e-mail: lak@mareddy.com 
+*******/
+/*=====  Body, block elements====*/
+	body	{
+		background: #444 url(/images/paper.jpg);
+		font: 100 10pt/18pt "Lucida Grande",verdana,arial,helvetica,sans-serif;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	
+	h1, h2, h3, h4, h5	{
+		display: block;
+		font-family: Georgia,Times,Serif;
+		font-weight: 100;
+		line-height: 1em;
+		margin: 0 0 10px 0;
+		padding: 0;
+		}
+		
+	h1	{
+		font-size: 80pt;
+		font-weight: 900;
+		margin: 0 0 100px 0;
+		}
+		
+	h2	{font-size: 40pt;}
+	h3	{font-size: 32pt;}
+	h4	{font-size: 28pt;}
+	h5	{font-size: 18pt;	font-weight: 900;}
+	
+	a	{color: green;	text-decoration: underline; }
+		a:hover{color: green;	text-decoration: none; }
+	
+	.clearpara	{
+		clear: both;
+		height: 0;
+		margin:0;
+		padding:0;
+		}
+	
+	.lhs	{	float: left;	}
+	.rhs	{float: right;	}
+	
+	blockquote {
+		margin:20px  0;
+		padding:10px 0;
+		font:100 italic 10pt/1.5em Georgia,Times,Serif;
+		border-top:2px dotted #000;
+		border-bottom:1px dotted #000;
+		}
+		
+	p {margin:0 0 10px 0;padding:0;} 
+		
+	ul, ol {
+		margin:0 0 0 10px ;
+		padding:0 0 0 10px;
+		}	
+
+/*=====  structure elements that contain content====*/
+
+	.pagewrap	{
+		margin: 0;
+		padding: 0;
+		}
+	.wrap, .ctr	{
+		margin: 0 auto;
+		padding: 0;
+		width: 960px;
+		}
+	
+	.content	{
+		margin: 0;
+		padding: 0 0 0 50px;
+		text-align: left;
+		}
+
+	/* this defines the vertical column in the recent articles section */		
+	.col	{
+		float: left;
+		margin: 0 20px 20px 0;
+		padding: 0;
+		width: 190px;
+		}
+	
+	.maincontent	{
+		background: #fff;
+		margin: 0 0 10px 0;
+		padding: 20px;
+		}
+		
+/*=====  topwrap on the top containing menu+search====*/
+
+	.topwrap {
+		margin:0 0 10px 0;
+		padding:10px;
+		background: #494949;
+		}
+		/*menu syling*/
+		#menu	{
+			float: left;
+			margin: 0;
+			padding: 0;
+			display:block;
+			}
+			
+			#menu ul	{
+				clear: left;
+				float: left;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				}
+				
+				#menu li	{
+					display: block;
+					float: left;
+					list-style: none;
+					margin: 0 10px 0 0;
+					padding: 0;
+					}
+					
+					#menu li a	{
+						color: #fff;
+						display: block;
+						font-size: 12pt;
+						letter-spacing: 0;
+						margin: 0;
+						padding: 5px 10px;
+						text-decoration: none;
+						text-transform: uppercase;
+						}
+						
+						#menu li.on a,
+						#menu li.on a:hover ,
+						#menu li a:hover	{
+							background: green;
+							color: #fff;
+							text-decoration: none;
+							}
+						
+							#menu li a em	{
+								font-style: normal;
+								text-decoration: underline;
+								}
+	
+	/*the search box styling  */
+	
+		#search	{
+		float: right;
+		margin: 5px 0 5px 0;
+		padding: 0;
+		}
+		#search form	{
+			margin: 0;
+			padding: 0;
+			}
+		
+		#search	input	{
+			display: block;
+			float: left;
+			font: 100 10pt/1em "Lucida Grande",verdana,arial,helvetica,sans-serif;
+			margin: 0 5px 0 0;
+			padding: 5px;
+			}
+		
+		#search input.ip	{
+			background: #fff;
+			border: 1px solid #ccc;
+			color: #666;
+			}
+			
+		#search button	{
+			background: #222;
+			border: 0;
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			float: left;
+			font: 100 10pt/1em "Lucida Grande",verdana,arial,helvetica,sans-serif;
+			margin: 0 5px 0 0;
+			padding: 5px;
+			text-transform: uppercase;
+			}
+
+/*=====  section heading such as latest project, recent articles etc.====*/	
+	.section_header	{
+		margin: 10px 0 10px -40px;
+		padding: 0;
+		}
+		.section_header h1	{
+			background: green;
+			color: white;
+			float: left;
+			font-size: 32pt;
+			letter-spacing: 3px;
+			margin: 0 0 0 0;
+			padding: 20px;
+			text-transform: uppercase;
+			}
+
+/*=====  logo====*/			
+	.logo	{
+		margin: 0 0 10px 0;
+		padding: 40px 20px;
+		}
+		.logo h1	{
+			float: left;
+			font-size: 70pt;
+			font-style: normal;
+			font-weight: 900;
+			letter-spacing: -3px;
+			line-height: .8em;
+			line-height: 1em;
+			margin: 0;
+			min-height: 200px;
+			padding: 10px 0 0 180px;
+			text-align: left;
+			text-transform: uppercase;
+			}
+			
+			.logo h1 em	{
+				display: block;
+				font-family: "Lucida Grande",verdana,arial,helvetica,sans-serif;
+				font-size: 18pt;
+				font-style: normal;
+				font-weight: 100;
+				letter-spacing:2px;
+				line-height: 1.5em;
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				}
+				.logo h1 a {color:#444;}
+				.logo h1 a:hover	{color:#555;}
+
+/*=====  post contains post title, date, postmeta and post entry styling====*/					
+.post {margin:10px 0;padding:0;}
+	.post-title {margin:0;padding:0;}
+	.post-title	h2{
+		font-size: 28pt;
+		font-weight: 100;
+		letter-spacing: 2px;
+		line-height: 100%;
+		margin: 0 0 10px 0;
+		padding: 0;
+		text-transform: uppercase;
+		word-spacing: .1em;
+		}
+		
+		.post-title h2 a	{	color: #444;	}
+			.post-title h2 a:hover {color:#000;}
+			
+	.date	{
+		color: #444;
+		display: block;
+		font-family: Helvetica,Arial, Sans-Serif;
+		font-weight: 100;
+		margin: 20px 0 10px 0;
+		padding: 0;
+		}
+		
+	.postentry, .postentry p {	margin:0 0 10px 0;	padding:0;}
+	
+	.postmeta {
+		font-family: verdana,Arial,Sans-Serif;
+		margin:5px 0;
+		padding:0;
+		font-size:12pt;
+		}
+		.postmeta em {font-style:normal;}
+
+	/* the styles of images used in the template*/
+	img	{
+		border: 0;
+		display: block;
+		height: auto;
+		margin: 20px 0;
+		max-width: 400px;
+		padding: 0;
+		}
+		
+	img.alignleft	{
+		float: left;
+		margin: 0 20px 5px 0;
+		padding: 0;
+		}
+		
+	img.alignright	{
+		float: right;
+		margin: 0 0 5px 20px;
+		padding: 0;
+		}
+
+	img.portfolio	{
+		border: 0;
+		display: block;
+		height: auto;
+		margin: 20px 0;
+		max-width: 440px;
+		padding: 0;
+		}
+/*=======The styling for latest project ========*/	
+	.latest-project	{
+		background: #fff;
+		color: #666;
+		margin: 10px 0 20px 0;
+		padding: 20px 40px;
+		}
+		.latest-project .section_header	{
+			margin: 10px 0 0 -60px;
+			}
+					
+			.latest-project img	{
+					border: 2px solid #fff;
+					height: auto;
+					max-width: 450px;
+					}
+
+			.latest-project .date	{
+					color: #222;
+					font-size: 18pt;
+					}
+			
+			.latest-project a.otherentries	{
+					border-color: #222;
+					color: #222;
+					}
+					
+/*=======The styling for vertical columns ========*/						
+	.col	{
+		font-size: 11pt;
+		line-height: 1.5em;
+		}
+		.col p	{
+			margin: 0 0 10px 0;
+			padding: 0;
+			}
+		
+		.col img.alignleft	{
+			height: auto;
+			max-width: 180px;
+			}
+			
+		.col .post-title h2	{
+			color: #000;
+			font-size: 12pt;
+			font-weight: 900;
+			letter-spacing: 0;
+			line-height: 130%;
+			margin:0 0 5px 0;
+			padding: 2px 0;
+			text-transform: uppercase;
+			word-spacing: .2em;
+			}
+			.col post-title h2 a	{
+				color: #000;
+				}
+				.col .post-title h2 a:hover	{
+					background: #ffffcc;
+					color: #000;
+					}
+					
+		.col .date {
+			margin:10px 0 0 0;
+			font-size:11pt;
+			font-weight:900;
+			}	
+			
+	.col .postmeta {font-size:8pt;line-height:120%;margin:5px 0 0 0;padding:0;}
+
+/* various  link styling*/			
+	a.readmore	{
+		border-bottom: 1px dotted #000;
+		border-top: 1px dotted #000;
+		float: left;
+		font-size: 12pt;
+		font-weight: 900;
+		margin: 0;
+		padding: 1px 5px;
+		text-transform: uppercase;
+		}
+		a.readmore:hover	{	border-color: #f06;	}
+	
+	a.otherentries, a.continue	{
+		border-bottom: 1px dotted #000;
+		border-top: 1px dotted #000;
+		color: #000;
+		float: left;
+		font-size: 8pt;
+		font-weight: 900;
+		letter-spacing: .3em;
+		line-height: 1em;
+		margin: 10px 0;
+		padding: 5px;
+		text-transform: uppercase;
+		}
+		
+		a.continue	{	border-top: 0;}
+			a.otherentries:hover, a.continue:hover	{color: #f06;	}
+	
+/*=====  footer====*/
+	.footer	{
+		font-size: 10pt;
+		margin: 0 0 0 0;
+		padding: 0;
+		}
+	.footer	a {
+	  text-decoration: none;
+  }
+
+	/* styling for site designer link*/	
+	.sitecredits {color:#a9a9a9;} 
+		.sitecredits a {color:#a9a9a9;border-bottom:1px dotted #a9a9a9;}
+			.sitecredits a:hover {color:#595959;}
+		
+	
+/*=====  categories styling at page bottom====*/
+			
+	.categories	{
+		background: #494949;
+		display: block;
+		margin: 10px 0;
+		padding: 10px 20px;
+		text-align: left;
+		}
+		.categories ul	{
+			margin: 0;
+			padding: 0;
+			line-height: 12pt;
+			}
+			.categories li	{
+				color: #fff;
+				display: inline;
+				font-size: 11pt;
+				list-style-type: none;
+				margin: 0 4px 0 0;
+				padding: 0;
+				}
+				.categories li a	{
+					color: #fff;
+					font: 100 normal 8pt/1em "Lucida Grande",verdana,arial,helvetica,sans-serif;
+					text-decoration: none;
+					}
+					.categories li a:hover	{
+						color: #fcc;
+					}
+/*===== aboutsite styling at page bottom====*/					
+	.aboutsite	{
+		clear: both;
+		color: #ccc;
+		background:#222;
+		font: 100 normal 12pt/1.5em "Lucida Grande",verdana,arial,helvetica,sans-serif;
+		margin:10px 0 0 0;
+		padding:20px ;
+		}
+		
+		.aboutsite p	{
+			margin: 0;
+			padding: 0;
+			}
+			
+			.aboutsite em	{
+				border-bottom: 1px dotted #eee;
+				color:#eee;
+				font-style: normal;
+				}
+
+/*=====  block element that creates space in a page====*/	
+	.spacer	{
+		clear: both;
+		display: block;
+		height: 30px;
+		margin: 0;
+		padding: 0;
+		}
+/*=====  styling for valid html, valid css buttons ====*/
+	.validbuttons {
+		margin:0;
+		padding:0;
+		width:200px;
+		float:right;
+		}
+		.validbuttons a {float:right;margin:0 0 0 10px;padding:0;width:88px;}
+
+
+ul.list, ul.list li {
+  list-style-type: none; 
+  text-transform:lowercase;
+}
+
+ul.list li:first-letter {
+  text-transform:uppercase;
+}
+
+ul.list li {
+  float: left;
+  width: 45%;
+}
+
+ul.list li a {
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+.no-padding {
+ padding: 0; 
+}
+.no-margin {
+ margin: 0; 
+}
+
+.grey_text {
+  color: #999;
+}
+
+.breadcrumbs {
+  padding-left: 0px;
+  font-size: 10pt;
+  padding-bottom: 10pt;
+  height: 12pt;
+}
+
+ul.breadcrumbs, ul.breadcrumbs li {
+  list-style-type: none;
+  text-transform:lowercase;
+}
+
+ul.breadcrumbs li {
+  float: left;
+  padding-left: 5px;
+}
+
+ul.breadcrumbs li a {
+  padding: 0;
+  margin: 0;
+}
+
+ul.breadcrumbs li:first-letter {
+  padding: 0;
+  margin: 0;
+}
+
+.section_header h1 span {
+  display: block;
+  text-align: right;
+  font-size: 10pt;
+  padding: 0;
+  margin: 0;
+}
+
+.section_header h1 {
+  padding-bottom: 0;
+}
+
+.info_search {
+  font-size: 80%;
+  line-height: 1.2em;
+}
+
+.search_results li {
+  padding-top: 1em;
+}
+
+.pagination {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.maincontent {
+  position: relative;
+}
+
+#flags_container #flags_box {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+
+#flags_box a {
+  float: left;
+  padding-left: 10px;
+  line-height: 16px;
+  font-size: 10pt;
+}
+
+#flags_box a img {
+  padding: 0; 
+  margin: 0;
+}
+
+.notice {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.main_content {
+  float: left;
+  padding-right: 10px;
+}
+
+.ad {
+  float: right;
+  width: 130px;
+}
+
+.bottom_ad {
+  padding-top: 30px;
+}
+
+.top_ad {
+ padding-bottom: 20px; 
+}
+
+.addthis_toolbox {
+  padding-bottom: 12px;
+  line-height: 16px;
+}

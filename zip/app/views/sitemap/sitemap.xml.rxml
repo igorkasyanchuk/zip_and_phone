@@ -1,0 +1,20 @@
+xml.instruct!
+ 
+xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
+  
+  xml.url do
+    xml.loc         "http://cityzip.org.ua/"
+    xml.lastmod     w3c_date(Time.now)
+    xml.changefreq  "always"
+  end
+
+  @ms.each do |m|
+    xml.url do
+      xml.loc         url_for(o_r_m_url(m.o, m.r, m, :host => 'cityzip.org.ua', :protocol => 'http'))
+      xml.changefreq  "weekly"
+      xml.priority    1
+    end
+  end
+ 
+end
+ 

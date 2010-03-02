@@ -1,0 +1,33 @@
+= Ukrainian
+
+Ukrainian language support for Ruby & Ruby and Rails | Підтримка української мови для Ruby та Ruby on Rails
+
+= Що це і кому це може знадобиться?
+
+Ukrainian - бібліотека повноцінної підтримки української мови(форматування дати та часу, плюралізації та інтернаціоналізації вцілому) 
+
+= Процес встановлення
+
+  $ sudo gem install romanvbabenko-ukrainian
+
+config/environment.rb
+
+    config.gem "romanvbabenko-ukrainian", :lib => "ukrainian",
+      :source => "http://gems.github.com", :version => ">= 0.2.1"
+
+    config.i18n.default_locale = :uk
+
+= Ruby on Rails
+
+Пакет мість в собі переклади стандартних бібліотек: ActionView, ActiveRecord, ActiveSupport, а також підтримку плюралізаціх для таких методів як *distance_of_time_in_words* та *distance_of_time_in_words_to_now*
+
+= Сторонні пакети
+
+Крім стандартних бібліотек Ruby on Rails підтримуються також переклади пакетів сторонніх розробників:
+* {justinfrench/formtastic}[http://github.com/justinfrench/formtastic/tree/master]
+
+Якщо у вас я власні переклади чи зауваження, то напишіть мені повідомлення через github, або на поштову скріньку {romanvbabenko@gmail.com}[mailto:romanvbabenko@gmail.com]
+
+= Copyright
+
+Copyright (c) 2009 {Roman V. Babenko}[http://romanvbabenko.com]. See LICENSE for details.

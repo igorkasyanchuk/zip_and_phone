@@ -1,0 +1,22 @@
+- page_title(@m.name)
+- title(@m.name, @m.post_index)
+- description(@m.name, @m.post_index)
+- keywords(@m.name, @m.post_index)
+- footers(@m.name)
+
+- content_for :post_code do
+  = t('post_code')
+
+- content_for :breadcrumbs do
+  %ul
+    %li= link_to t('all_o'), root_path
+    %li &raquo;
+    %li= link_to @m.o.name.capitalize, @m.o
+    %li &raquo;
+    %li= link_to @m.r.name.capitalize, [@m.o, @m.r]
+    %li &raquo;
+    %li= @m.name.capitalize
+
+%h2= t('city_post_index', :code => @m.post_index)
+%h4.grey_text= t('city_old_post_index', :code => @m.old_post_index) if @m.old_post_index_exists?
+%hr

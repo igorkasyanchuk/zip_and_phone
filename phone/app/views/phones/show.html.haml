@@ -1,0 +1,18 @@
+- page_title(@phone.name, @phone.code)
+- title(@phone.name, @phone.code)
+- description(@phone.name, @phone.code)
+- keywords(@phone.name, @phone.code)
+- footers(@phone.name)
+
+- content_for :post_code do
+  = t('post_code')
+
+- content_for :breadcrumbs do
+  %ul
+    %li= link_to t('home_link'), root_path
+    %li &raquo;
+    %li= @phone.name.capitalize
+
+%h2= t('phone_show_code', :code => @phone.code)
+%h3.grey_text= t('phone_show_information', :code => @phone.information) unless @phone.information == '0' unless @phone.information.blank?
+%h3.grey_text= t('phone_show_help', :code => @phone.help) unless @phone.help == '0' unless @phone.help.blank?

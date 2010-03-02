@@ -1,0 +1,24 @@
+%h2 Зв'язок з нами
+
+
+%table
+  %thead
+    %tr
+      %th Ім'я
+      %th Емейл
+      %th Повідомлення
+      %th Коли?
+      %th Дія
+  %tbody
+    - @feedbacks.each do |f|
+      %tr
+        %td= f.name
+        %td= f.email
+        %td= f.body
+        %td= (l f.created_at, :format => :short) unless f.created_at.nil?
+        %td= link_to 'видалити', feedback_path(f), {:confirm => 'Видалити?', :method => :delete}
+==<style>
+==table {width: 100%;}
+==table td, table th {padding: 3px 4px;}
+==table th {font-weight: bold;}
+==</style>
