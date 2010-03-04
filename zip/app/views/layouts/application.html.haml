@@ -46,9 +46,15 @@
                 %li{:class => "#{'on' if action_name == 'new'}"}
                   = link_to t('contact_link'), new_contact_path, :title => "The Contact Page", :accesskey => "c", :id => 'contact'
                 %li
-                  = link_to t('city_maps'), 'http://kartaonline.com/', :title => t('city_maps')
+                  - if home_page?
+                    = link_to t('city_maps'), 'http://kartaonline.com/', :title => t('city_maps')
+                  - else
+                    = link_to t('city_maps'), 'http://kartaonline.com/', :title => t('city_maps'), :rel => 'nofollow'
                 %li
-                  = link_to t('citycode_link'), 'http://citycode.org.ua/', :title => t('citycode_link')
+                  - if home_page?
+                    = link_to t('citycode_link'), 'http://citycode.org.ua/', :title => t('citycode_link')
+                  - else
+                    = link_to t('citycode_link'), 'http://citycode.org.ua/', :title => t('citycode_link'), :rel => 'nofollow'
                 %li
                   %a{:href => 'javascript: add_to_favorites();'}= t('add_to_favorites')
               %p.clearpara
