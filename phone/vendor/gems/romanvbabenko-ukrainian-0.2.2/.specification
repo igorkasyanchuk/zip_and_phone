@@ -1,0 +1,92 @@
+--- !ruby/object:Gem::Specification 
+name: romanvbabenko-ukrainian
+version: !ruby/object:Gem::Version 
+  version: 0.2.2
+platform: ruby
+authors: 
+- romanvbabenko
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-08-20 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: thoughtbot-shoulda
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: i18n
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+description: Ukrainian language support for Ruby and Rails
+email: romanvbabenko@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README.rdoc
+files: 
+- .document
+- .gitignore
+- LICENSE
+- README.rdoc
+- Rakefile
+- VERSION.yml
+- lib/ukrainian.rb
+- lib/ukrainian/backend/simple.rb
+- lib/ukrainian/locale/acitvesupport.yml
+- lib/ukrainian/locale/actionview.yml
+- lib/ukrainian/locale/activerecord.yml
+- lib/ukrainian/locale/datetime.yml
+- lib/ukrainian/locale/formtastic.yml
+- lib/ukrainian/locale/pluralize.rb
+- test/test_helper.rb
+- test/ukrainian_test.rb
+- ukrainian.gemspec
+has_rdoc: true
+homepage: http://github.com/romanvbabenko/ukrainian
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Ukrainian language support for Ruby and Rails
+test_files: 
+- test/test_helper.rb
+- test/ukrainian_test.rb
