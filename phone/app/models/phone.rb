@@ -6,6 +6,6 @@ class Phone < ActiveRecord::Base
     self.send("name_#{I18n.locale}")
   end
   def to_param
-    "#{id}-#{(name  || "").gsub(/[^a-z0-9а-яА-ЯіІїЇєЄ]+/i, '-')}"
+    "#{id}-#{(name  || "").gsub(/[^a-z0-9а-яА-ЯіІїЇєЄ]+/i, '-')}".mb_chars.downcase
   end
 end

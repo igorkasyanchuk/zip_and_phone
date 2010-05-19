@@ -1,16 +1,16 @@
-- page_title(@o.name)
-- title(@o.name)
-- description(@o.name)
-- keywords(@o.name)
-- footers(@o.name)
+- page_title(@o.name.capitalize)
+- title(@o.name.capitalize)
+- description(@o.name.capitalize)
+- keywords(@o.name.capitalize)
+- footers(@o.name.capitalize)
 
 - content_for :breadcrumbs do
   %ul
     %li= link_to t('all_o'), root_path
     %li &raquo;
-    %li= @o.name
+    %li= @o.name.capitalize
 
 %ul.list
   - @o.rs.each do |o|
-    %li= link_to o.name, [@o, o]
+    %li= link_to o.name.capitalize, [@o, o]
 %div.clear

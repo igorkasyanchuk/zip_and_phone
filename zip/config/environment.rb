@@ -6,6 +6,17 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
+if Gem::VERSION >= "1.3.6"
+  module Rails
+    class GemDependency
+      def requirement
+        r = super
+        (r == Gem::Requirement.default) ? nil : r
+      end
+    end
+  end
+end  
+
 DEFAULT_TIME_ZONE = 'uk'
 
 Rails::Initializer.run do |config|
@@ -61,3 +72,29 @@ WillPaginate::ViewHelpers.pagination_options[:previous_label] = I18n.t('prev_pag
 WillPaginate::ViewHelpers.pagination_options[:next_label] = I18n.t('next_page')
 WillPaginate::ViewHelpers.pagination_options[:first_label] = I18n.t('first_page')
 WillPaginate::ViewHelpers.pagination_options[:last_label] = I18n.t('last_page')
+
+begin
+  require 'unicode'
+  String.class_eval  'def downcase
+     Unicode::downcase(self)
+   end
+   def downcase!
+     self.replace downcase
+   end
+
+   def upcase
+     Unicode::upcase(self)
+   end
+   def upcase!
+     self.replace upcase
+   end
+   def capitalize
+     Unicode::capitalize(self)
+   end
+
+   def capitalize!
+     self.replace capitalize
+   end'
+rescue LoadError
+   puts "NO GEM!!"
+end

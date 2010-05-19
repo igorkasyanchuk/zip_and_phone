@@ -5,12 +5,12 @@
   %ul.list.search_results
     - @results.each do |o|
       %li
-        = link_to o.name, [o.o, o.r, o]
+        = link_to o.name.capitalize, [o.o, o.r, o]
         .info_search
           .grey_text
-            = link_to (o.o.name, o.o)
+            = link_to(o.o.name.capitalize, o.o)
             &raquo;
-            = link_to o.r.name, [o.o, o.r]
+            = link_to o.r.name.capitalize, [o.o, o.r]
           .normal_text= t('city_post_index', :code => o.post_index)
           .grey_text= t('city_old_post_index', :code => o.post_index)
   %div.clear

@@ -1,7 +1,7 @@
 - page_title(@m.name)
-- title(@m.name, @m.post_index)
-- description(@m.name, @m.post_index)
-- keywords(@m.name, @m.post_index)
+- title(@m.name, @m.post_index.capitalize)
+- description(@m.name, @m.post_index.capitalize)
+- keywords(@m.name, @m.post_index.capitalize)
 - footers(@m.name)
 
 - content_for :post_code do
@@ -15,7 +15,7 @@
     %li &raquo;
     %li= link_to @m.r.name.capitalize, [@m.o, @m.r]
     %li &raquo;
-    %li= @m.name.capitalize
+    %li= @m.name
 
 %h2= t('city_post_index', :code => @m.post_index)
 %h4.grey_text= t('city_old_post_index', :code => @m.old_post_index) if @m.old_post_index_exists?

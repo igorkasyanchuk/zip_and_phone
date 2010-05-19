@@ -8,6 +8,17 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 DEFAULT_TIME_ZONE = 'uk'
 
+if Gem::VERSION >= "1.3.6"
+  module Rails
+    class GemDependency
+      def requirement
+        r = super
+        (r == Gem::Requirement.default) ? nil : r
+      end
+    end
+  end
+end 
+
 Rails::Initializer.run do |config|
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
@@ -18,7 +29,7 @@ Rails::Initializer.run do |config|
   config.gem "pacecar", :source => 'http://gemcutter.org'
   config.gem 'unicode'
   config.gem "i18n", :source => 'http://gemcutter.org'
-  config.gem "romanvbabenko-ukrainian", :lib => "ukrainian", :source => "http://gems.github.com", :version => ">= 0.2.1"
+  config.gem "romanvbabenko-ukrainian", :lib => "ukrainian"
   config.gem "formtastic", :source => "http://gemcutter.org" 
   
   # Only load the plugins named here, in the order given (default is alphabetical).

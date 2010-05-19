@@ -7,9 +7,15 @@ class M < ActiveRecord::Base
   def name
     self.send("name_#{I18n.locale}")
   end
-  def to_param
-    "#{id}-#{(name  || "").gsub(/[^a-z0-9а-яА-ЯіІїЇєЄ]+/i, '-')}"
+  alias_method :old_name, :name
+  def name
+    old_name.capitalize
   end
+  
+  def to_param
+    "#{id}-#{(name  || "").gsub(/[^a-z0-9а-яА-ЯіІїЇєЄ]+/i, '-')}".mb_chars.downcase
+  end
+  
   def post_index
     unless self.code1.blank?
       unless self.code1 == '-1'

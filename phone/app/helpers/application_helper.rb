@@ -38,7 +38,7 @@ module ApplicationHelper
   
   def description(t = SEO[:description], index = '')
     content_for :seo_description do
-      I18n.t('city_post_index_seo', :code => t, :index => index)
+      I18n.t('city_post_index_seo', :code => t, :index => index).mb_chars.downcase
     end
   end
   
@@ -52,13 +52,13 @@ module ApplicationHelper
   
   def keywords(t = SEO[:keywords], index = '')
     content_for :seo_keywords do
-      I18n.t('city_post_index_seo', :code => t, :index => index)
+      I18n.t('city_post_index_seo', :code => t, :index => index).mb_chars.downcase
     end
   end
   
   def footers(t = '')
     content_for :seo_footer do
-      (t || "") + ' ' + (SEO[:footer] || "")
+      (t || "") + ' ' + (SEO[:footer] || "").mb_chars.downcase
     end 
   end
   
