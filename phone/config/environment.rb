@@ -23,10 +23,10 @@ Rails::Initializer.run do |config|
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
-  config.gem "inherited_resources", :source => 'http://gemcutter.org'
-  config.gem "has_scope", :source => 'http://gemcutter.org'
-  config.gem "responders", :source => 'http://gemcutter.org'
-  config.gem "pacecar", :source => 'http://gemcutter.org'
+  config.gem "inherited_resources"
+  config.gem "has_scope"
+  config.gem "responders"
+  config.gem "pacecar"
   config.gem 'unicode'
   config.gem "i18n", :source => 'http://gemcutter.org'
   config.gem "romanvbabenko-ukrainian", :lib => "ukrainian"

@@ -50,12 +50,12 @@ uk:
   comment_not_added: "Повідомлення не додано. Переконайтесь що ви заповнили усі необхідні поля."
   flash_login_successfull: "Ви успішно увійшли на сайт."
   flash_logot_successfull: "Ви вийшли із сайту."
-  flash_login_unsuccessfull: "Неможливо ввійти на сайт як: '{{email}}'. Введіть емейл і пароль які ви використовували при реєстрації."
-  flash_user_register_successfull: "Дякуємо за реєстрацію на сайті {{sitename}}."
+  flash_login_unsuccessfull: "Неможливо ввійти на сайт як: '%{email}'. Введіть емейл і пароль які ви використовували при реєстрації."
+  flash_user_register_successfull: "Дякуємо за реєстрацію на сайті %{sitename}."
   flash_user_register_unsuccessfull: "Реєстрація неможлива. Спробуйте знову або зв'яжіться з адміністрацією сайту."
-  flash_user_forgot_successfull: "Інструкції по відновленню паролю вислані на: {{email}}."
-  flash_user_forgot_unsuccessfull: "{{email}} не присутній в системі."
-  flash_user_reset_successfull: "Пароль успішно оновленно для {{email}}."
+  flash_user_forgot_successfull: "Інструкції по відновленню паролю вислані на: %{email}."
+  flash_user_forgot_unsuccessfull: "%{email} не присутній в системі."
+  flash_user_reset_successfull: "Пароль успішно оновленно для %{email}."
   update: оновити
   save: зберегти
   cancel: відмінити
@@ -74,20 +74,20 @@ uk:
   roles: ролі
   delete: видалити
   are_you_sure: "Ви впевненні?"
-  all_users: "Користувачі ({{users_count}})"
-  all_contacts: "Зв'язок з нами ({{contacts_count}})"
+  all_users: "Користувачі (%{users_count})"
+  all_contacts: "Зв'язок з нами (%{contacts_count})"
   profile: Профіль
   edit_user: "Редагувати користувача"
   back: назад
   new_user: "Новий користувач"
   user_profile: "Профіль користувача"
-  user_roles: "Ролі користувача: {{user}}"
+  user_roles: "Ролі користувача: %{user}"
   add: 'додати'
   roles_field: Ролі
   table_created_on: Додано о
-  pending_messages: "непрочитані повідомлення ({{count}})"
+  pending_messages: "непрочитані повідомлення (%{count})"
   management: Управління
-  archile_menu_link: "архів ({{count}})"
+  archile_menu_link: "архів (%{count})"
   prev_page: Попередня
   next_page: Наступна
   first_page: '&laquo; Перша'
@@ -97,18 +97,18 @@ uk:
   all_o: Усі області
   post_codes: Телефонні коди
   post_code: Телефонний код
-  city_post_index: "Телефонний код: {{code}}"
-  city_old_post_index: "Старий Поштовий індекс: {{code}}"
-  phone_show_code: "Телефонний код: {{code}}"
-  phone_show_information: "Телефон довідки: {{code}}"  
-  phone_show_help: "Технічна служба: {{code}}" 
+  city_post_index: "Телефонний код: %{code}"
+  city_old_post_index: "Старий Поштовий індекс: %{code}"
+  phone_show_code: "Телефонний код: %{code}"
+  phone_show_information: "Телефон довідки: %{code}"  
+  phone_show_help: "Технічна служба: %{code}" 
   home_link: Головна
   contact_link: "Контакти"
   home_title: Телефонні Коди
   about_site_zip_codes: Телефонних Кодів.
   about_site: Найповніша база
   search_button: Пошук
-  city_post_index_seo: "{{code}} код, Телефонний код {{code}}, місто {{code}} {{index}} телефон Україна"
+  city_post_index_seo: "%{code} код, Телефонний код %{code}, місто %{code} %{index} телефон Україна"
   seo_title: Телефонні коди України, телефонні коди міст
   seo_description: Телефонні коди України, телефонні коди міст
   seo_keywords: Телефонні коди України, телефонні коди міст
@@ -123,6 +123,6 @@ uk:
   postal_indexes_link: Поштові Індекси
   
   are_you_intereseted_in: "Можливо вас ще зацікавить:"
-  city_postal_index_link: "Поштовий індекс: {{city}}"
+  city_postal_index_link: "Поштовий індекс: %{city}"
   
   city_maps: Карта міст

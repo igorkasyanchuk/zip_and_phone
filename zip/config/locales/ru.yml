@@ -24,9 +24,9 @@ ru:
   all_o: Все Области
   post_codes: Почтовые индексы
   post_code: Почтовый индекс
-  city_post_index_seo: "{{code}} индекс, почтовый индекс {{code}} Украина, индекс {{index}}"
-  city_post_index: "Почтовый индекс: {{code}}"
-  city_old_post_index: "Старый почтовый индекс: {{code}}"
+  city_post_index_seo: "%{code} индекс, почтовый индекс %{code} Украина, индекс %{index}"
+  city_post_index: "Почтовый индекс: %{code}"
+  city_old_post_index: "Старый почтовый индекс: %{code}"
   home_link: Главная
   contact_link: "Контакты"
   home_title: Почтовые индексы Украины
@@ -47,6 +47,6 @@ ru:
   citycode_link: Телефонные коды
   
   are_you_intereseted_in: "Возможно вас еще заинтересует:"
-  city_phone_code_link: "Телефонный код: {{city}}"
+  city_phone_code_link: "Телефонный код: %{city}"
   
   city_maps: Карта городов

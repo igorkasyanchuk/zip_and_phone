@@ -5,19 +5,19 @@ en:
   all_o: All Regions
   post_codes: Phone Codes
   post_code: Phone Code
-  city_post_index: "Phone code: {{code}}"
-  city_old_post_index: "Старий Поштовий індекс: {{code}}"
-  phone_show_code: "Phone code: {{code}}"
-  phone_show_information: "Information Phone: {{code}}"  
-  phone_show_help: "Support Phone: {{code}}" 
+  city_post_index: "Phone code: %{code}"
+  city_old_post_index: "Старий Поштовий індекс: %{code}"
+  phone_show_code: "Phone code: %{code}"
+  phone_show_information: "Information Phone: %{code}"  
+  phone_show_help: "Support Phone: %{code}" 
   home_link: Home
   contact_link: "Contact"
   home_title: Phone Codes
   about_site_zip_codes: Phone Codes.
   about_site: Up-to-date database
   search_button: Search
-  city_post_index_seo: Phone Code {{code}}
-  city_post_index_seo: "{{code}} code, Phone code {{code}}, city {{code}} {{index}} phone Ukraine"
+  city_post_index_seo: Phone Code %{code}
+  city_post_index_seo: "%{code} code, Phone code %{code}, city %{code} %{index} phone Ukraine"
   seo_title: Phone Code, phone codes
   seo_description: Phone Code, phone codes
   seo_keywords: Phone Code, phone codes
@@ -33,6 +33,6 @@ en:
   postal_indexes_link: Postal Indexes
   
   are_you_intereseted_in: "It could be interesting for you:"
-  city_postal_index_link: "Postal code: {{city}}" 
+  city_postal_index_link: "Postal code: %{city}" 
   
   city_maps: Cities Map  

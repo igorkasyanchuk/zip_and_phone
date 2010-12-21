@@ -5,12 +5,12 @@ en:
   all_o: All Regions
   post_codes: Postal Codes
   post_code: Postal Code
-  city_post_index: "Postal Code: {{code}}"
-  city_old_post_index: "Old Postal Code: {{code}}"
+  city_post_index: "Postal Code: %{code}"
+  city_old_post_index: "Old Postal Code: %{code}"
   home_link: Home
   contact_link: "Contacts"
   home_title: Ukrainian Postal Codes
-  city_post_index_seo: "{{code}} index, postal code {{code}} Ukraine, post index {{index}}"
+  city_post_index_seo: "%{code} index, postal code %{code} Ukraine, post index %{index}"
   about_site_zip_codes: Ukrainian Postal Codes.
   about_site: Up-to-date database
   search_button: Search
@@ -28,7 +28,7 @@ en:
   citycode_link: Phone Codes
   
   are_you_intereseted_in: "It could be interesting for you:"
-  city_postal_index_link: "Phone code: {{city}}"
-  city_phone_code_link: "Phone code: {{city}}"
+  city_postal_index_link: "Phone code: %{city}"
+  city_phone_code_link: "Phone code: %{city}"
   
   city_maps: Cities Map

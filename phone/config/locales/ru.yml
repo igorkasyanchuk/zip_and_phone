@@ -24,18 +24,18 @@ ru:
   all_o: Все Области
   post_codes: Телефонные коды
   post_code: Телефонный код
-  city_post_index: "Телефонный код: {{code}}"
-  city_old_post_index: "Старий Поштовий индекс: {{code}}"
-  phone_show_code: "Телефонный код: {{code}}"
-  phone_show_information: "Телефон справки: {{code}}"  
-  phone_show_help: "Техн. телефон: {{code}}" 
+  city_post_index: "Телефонный код: %{code}"
+  city_old_post_index: "Старий Поштовий индекс: %{code}"
+  phone_show_code: "Телефонный код: %{code}"
+  phone_show_information: "Телефон справки: %{code}"  
+  phone_show_help: "Техн. телефон: %{code}" 
   home_link: Главная
   contact_link: "Контакты"
   home_title: Телефонные Коды
   about_site_zip_codes: Телефонных Кодов.
   about_site: Самая полная база
   search_button: Поиск
-  city_post_index_seo: "{{code}} код, Телефонный код {{code}}, город {{code}} {{index}} телефон Украина"
+  city_post_index_seo: "%{code} код, Телефонный код %{code}, город %{code} %{index} телефон Украина"
   seo_title: Телефонные коды Украины, телефонные коды городов
   seo_description: Телефонные коды Украины, телефонные коды городов
   seo_keywords: Телефонные коды Украины, телефонные коды городов
@@ -51,6 +51,6 @@ ru:
   postal_indexes_link: Почтовые Индексы
   
   are_you_intereseted_in: "Возможно вас еще заинтересует:"
-  city_postal_index_link: "Почтовый Индекс: {{city}}"
+  city_postal_index_link: "Почтовый Индекс: %{city}"
   
   city_maps: Карта городов
