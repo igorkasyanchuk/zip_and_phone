@@ -54,3 +54,4 @@ public/stylesheets/compiled/tables.css
 public/stylesheets/compiled/text.css
 public/stylesheets/compiled
 public/stylesheets/compiled/*
+config/deploy.rb

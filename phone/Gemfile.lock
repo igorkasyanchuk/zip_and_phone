@@ -21,6 +21,7 @@ GEM
     inherited_resources (1.0.2)
       has_scope (>= 0.4)
       responders (>= 0.4.2)
+    kgio (2.1.1)
     mysql (2.8.1)
     pacecar (1.4.5)
     rack (1.1.2)
@@ -37,6 +38,9 @@ GEM
     ukrainian (2.6.0)
       i18n
     unicode (0.4.0)
+    unicorn (3.3.1)
+      kgio (~> 2.1)
+      rack
 
 PLATFORMS
   ruby
@@ -51,6 +55,7 @@ DEPENDENCIES
   pacecar
   rails (~> 2.3.5)
   responders (= 0.4.2)
-  rmagick
+  rmagick (= 2.12.2)
   ukrainian
   unicode
+  unicorn (~> 3.3.1)
