@@ -50,3 +50,5 @@ ru:
   city_phone_code_link: "Телефонный код: %{city}"
   
   city_maps: Карта городов
+  
+  rest_in_ua: "Отдых в Украине"

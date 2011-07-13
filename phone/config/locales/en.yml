@@ -36,3 +36,5 @@ en:
   city_postal_index_link: "Postal code: %{city}" 
   
   city_maps: Cities Map  
+  
+  rest_in_ua: "Rest in Ukraine"

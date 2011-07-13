@@ -56,7 +56,8 @@
                   - else
                     = link_to t('postal_indexes_link'), 'http://cityzip.org.ua/', :title => t('postal_indexes_link'), :rel => 'nofollow'
                 %li
-                  %a{:href => 'javascript: add_to_favorites();'}= t('add_to_favorites')
+                  %noindex
+                    = link_to t('rest_in_ua'), 'http://snap.com.ua', :title => t('rest_in_ua'), :rel => 'nofollow'
               %p.clearpara
               /
                 \/menu

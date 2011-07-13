@@ -122,3 +122,5 @@ uk:
   city_phone_code_link: "Телефонний код: %{city}"
   
   city_maps: Карта міст
+  
+  rest_in_ua: "Відпочинок в Україні"

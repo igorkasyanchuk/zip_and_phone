@@ -32,3 +32,5 @@ en:
   city_phone_code_link: "Phone code: %{city}"
   
   city_maps: Cities Map
+  
+  rest_in_ua: "Rest in Ukraine"
